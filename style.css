@@ -262,6 +262,7 @@ css for main area
 
 .card_wrapper{
     display: flex;
+    flex-wrap: wrap;
     padding: 30px;
 }
 
@@ -346,18 +347,20 @@ css for footer area
 /* =========================================
 Media Queries
 ============================================ */
-/* mobile */
-/* header area */
+/* mobile  or extra small devices*/
 @media (max-width: 576px){
 
+    /* header area */
     .container{
         width: 100%;
         margin: auto;
     }
+
     .header_area{
         width: 100%;
         background: none;
     }
+
     .nav_bar{
         display: none;
     }
@@ -366,21 +369,22 @@ Media Queries
         width: 100%;
         margin: 0;
         padding: 0;
-
     }
+
     .banner_text{
         width: 100%;
         text-align: center;
         margin: 0;
         padding: 0;
-        
     }
+
     .banner .banner_img{
         width: 100%;
         text-align: center;
         margin: 0;
         padding: 0;
     }
+
     .banner_text h1{
         font-size: 3rem;
         color: rgb(22, 16, 16);
@@ -389,13 +393,13 @@ Media Queries
         padding: 0;
         line-height: 60px;
     }
+
     .banner .banner_img{
         width: 100%;
         padding: 40px;
     }
 
     /* players */
-
     .main_area{
         margin: 0px;
     }
@@ -418,11 +422,13 @@ Media Queries
         margin-top: 100px;
         padding: 30px;
     }
+
     .highlight_text{
         width: 100%;
         padding: 0px;
         text-align: center;
     }
+
     .highlight_text h2{
         font-size: 2rem;
         color: #0A0826;
@@ -453,7 +459,6 @@ Media Queries
 
 
     /* why choose us */
-
     .popular_info{
         background: #34e7e4;
         margin-top: 100px;
@@ -482,7 +487,86 @@ Media Queries
         text-align: center;
         padding: 100px;
     }
-
 }
+
+    /* small devices */
+    @media (min-width: 577px) and (max-width:768px){
+
+        /* navigation */
+        .header_area{
+            padding: 30px;
+        }
+        .nav_bar ul li a{
+            padding: 10px 10px;          
+            font-size: 13px; 
+        }
+
+        .nav_bar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px;
+        }
+
+
+        /* banner */
+        .banner_text h1{
+            color: #fff;
+            font-weight: bold;
+            line-height: 4.625rem;
+            margin-top: 0px;
+        }
+
+
+        /* players section */
+        .players_wrapper{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            gap: 60px;
+        }
+
+
+        /* highlights */
+        .highlight_text h2{
+            font-size: 2rem;
+            color: #0A0826;
+            font-weight: bold;
+            line-height: 3.625rem;
+            margin-top: 0px;
+        }
+
+        .highlight_img{
+            margin-top: 50px;
+        }
+
+
+        /* why choose us */
+        .card_wrapper{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            gap: 40px;
+        }
+
+        .single_card{
+            padding: 60px;
+            box-shadow: 0px 0px 5px black;
+            margin: 0;
+        }
+
+
+        /* footer */
+        .inner_footer{
+            width: 40%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .inner_footer p{
+            font-size: 14px;
+        }
+    }
 
         /* End */
