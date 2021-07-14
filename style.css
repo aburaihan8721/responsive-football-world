@@ -248,10 +248,9 @@ css for main area
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    position: relative;
-    margin-top: 100px;
     color: rgb(255, 255, 255);
     padding-top: 30px;
+    margin-top: 100px;
 }
 
 
@@ -262,7 +261,7 @@ css for main area
 
 .card_wrapper{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding: 30px;
 }
 
@@ -348,7 +347,7 @@ css for footer area
 Media Queries
 ============================================ */
 /* mobile  or extra small devices*/
-@media (max-width: 576px){
+@media (max-width: 575px){
 
     /* header area */
     .container{
@@ -490,7 +489,7 @@ Media Queries
 }
 
     /* small devices */
-    @media (min-width: 577px) and (max-width:768px){
+    @media (min-width: 576px) and (max-width:767px){
 
         /* navigation */
         .header_area{
@@ -542,17 +541,18 @@ Media Queries
 
 
         /* why choose us */
+        .popular_info{
+            background-image: none;
+        }
         .card_wrapper{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: auto;
-            gap: 40px;
+            display: block;   
         }
 
         .single_card{
             padding: 60px;
             box-shadow: 0px 0px 5px black;
-            margin: 0;
+            margin-top: 30px;
+            width: 100%;
         }
 
 
