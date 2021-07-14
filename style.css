@@ -39,7 +39,7 @@ ul>li{
 }
 
 .box_btn{
-    width: auto;
+    width: 150px;
     height: 44px;
     padding: 10px 25px;
     color: #fff;
@@ -496,13 +496,13 @@ Media Queries
             padding: 30px;
         }
         .nav_bar ul li a{
-            padding: 10px 10px;          
+            padding: 10px 07px;          
             font-size: 13px; 
         }
 
         .nav_bar{
             display: flex;
-            justify-content: space-between;
+            justify-content: evenly;
             align-items: center;
             padding: 25px;
         }
