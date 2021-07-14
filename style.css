@@ -244,7 +244,7 @@ css for main area
 /* why choose us area */
 .popular_info{
     background: rgb(69, 124, 121);
-    background-image: url(images/bg-01.jpg);
+    background-image: url(images/bg-03.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -342,4 +342,147 @@ css for footer area
     color: #000000;
 }
 
-/* End */
+
+/* =========================================
+Media Queries
+============================================ */
+/* mobile */
+/* header area */
+@media (max-width: 576px){
+
+    .container{
+        width: 100%;
+        margin: auto;
+    }
+    .header_area{
+        width: 100%;
+        background: none;
+    }
+    .nav_bar{
+        display: none;
+    }
+    .banner{
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+    .banner_text{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .banner .banner_img{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .banner_text h1{
+        font-size: 3rem;
+        color: rgb(22, 16, 16);
+        font-weight: bold;
+        margin-top: 30px;
+        padding: 0;
+        line-height: 60px;
+    }
+    .banner .banner_img{
+        width: 100%;
+        padding: 40px;
+    }
+
+    /* players */
+
+    .main_area{
+        margin: 0px;
+    }
+
+    .players_wrapper{
+        display: block;
+    }
+
+    .single_player{
+        box-shadow: 0px 0px 30px rgb(226, 233, 238);
+        padding: 30px;
+        margin-top: 60px;
+    }
+    
+
+    /* highlights */
+    .highlights{
+        margin: 0px;
+        display: block;
+        margin-top: 100px;
+        padding: 30px;
+    }
+    .highlight_text{
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+    }
+    .highlight_text h2{
+        font-size: 2rem;
+        color: #0A0826;
+        font-weight: bold;
+        line-height: 3.625rem;
+        margin-top: 2.688rem;
+    }
+
+    .highlight_img{
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    /* quick message */
+    .quick_message{
+        margin-top: 100px;
+        background: rgb(209, 195, 195);
+        width: 100%;
+    }
+    
+
+    .quick_message h3{
+        font-size: 30px;
+        text-align: center;
+    }
+
+
+    /* why choose us */
+
+    .popular_info{
+        background: #34e7e4;
+        margin-top: 100px;
+        color: #000000;
+        padding-top: 30px;
+    }
+
+
+    .card_wrapper{
+        display: block;
+        padding: 30px;
+    }
+
+
+    .single_card{
+        margin-right: 0px;
+        padding: 40px;
+        box-shadow: 0px 0px 5px black;
+        margin-top: 30px;
+    }
+    
+
+    /* footer */
+    .inner_footer{
+        width: 100%;
+        text-align: center;
+        padding: 100px;
+    }
+
+}
+
+        /* End */
