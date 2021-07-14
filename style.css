@@ -39,7 +39,7 @@ ul>li{
 }
 
 .box_btn{
-    width: 150px;
+    width: 180px;
     height: 44px;
     padding: 10px 25px;
     color: #fff;
@@ -391,6 +391,10 @@ Media Queries
         margin-top: 30px;
         padding: 0;
         line-height: 60px;
+    }
+
+    .banner_text .banner_btn .fa-arrow-right{
+        margin-left: 0px;
     }
 
     .banner .banner_img{
